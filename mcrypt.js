@@ -365,7 +365,7 @@ var ExpandKey=function(key) {
   if(!expandedKeys[key]){
 	  var kl = key.length, ks, Rcon = 1;
 	  ks=15<<5;
-	  keyA=new Array(ks);
+	  var keyA=new Array(ks);
 	  for(var i = 0; i < kl; i++)
 		keyA[i]=key.charCodeAt(i);
 	  for(var i = kl; i < ks; i += 4) {
