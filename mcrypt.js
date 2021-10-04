@@ -18,7 +18,7 @@
  */
   
  //this creates a static class mcrypt that is already initialized
- exports.mcrypt=mcrypt?mcrypt:new function(){
+ exports.mcrypt=typeof(mcrypt)!="undefined"?mcrypt:new function(){
  
  //this allows the user to create instances of this class that keep
  //track of their own key, cipher, and mode
